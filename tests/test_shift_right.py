@@ -1,4 +1,4 @@
-from game.fundamentals import (
+from game.mechanics import (
     shift_right,
 )
 

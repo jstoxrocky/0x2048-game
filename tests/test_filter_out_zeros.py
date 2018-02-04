@@ -1,4 +1,4 @@
-from game.fundamentals import (
+from game.mechanics import (
     filter_out_zeros,
 )
 
