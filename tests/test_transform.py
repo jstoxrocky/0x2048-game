@@ -1,4 +1,4 @@
-from game.fundamentals import (
+from game.mechanics import (
     transform,
     UP, DOWN, LEFT, RIGHT
 )

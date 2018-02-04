@@ -4,10 +4,10 @@
 
 
 import random
-from .exceptions import (
+from game.exceptions import (
     GameOver,
 )
-from .mechanics import (
+from game.mechanics import (
     move,
 )
 
