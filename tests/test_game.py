@@ -7,6 +7,17 @@ from game.mechanics import (
 )
 
 
+def test_new():
+    random.seed(1234)
+    state = TwentyFortyEight.new()
+    expected_state = {
+        'board': [[2, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 2, 0]],
+        'score': 0,
+        'gameover': False,
+    }
+    assert state == expected_state
+
+
 def test_state():
     random.seed(1234)
     state = TwentyFortyEight().state

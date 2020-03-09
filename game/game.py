@@ -20,11 +20,16 @@ class TwentyFortyEight:
         self._add_new_tile()
 
     @staticmethod
+    def new():
+        state = TwentyFortyEight().state
+        return state
+
+    @staticmethod
     def _empty_board(rows, cols):
         return [[0 for j in range(cols)] for i in range(rows)]
 
-    @classmethod
-    def _load(cls, state):
+    @staticmethod
+    def _load(state):
         rows = len(state['board'])
         cols = len(state['board'][0])
         game = TwentyFortyEight(rows=rows, cols=cols)
