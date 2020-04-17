@@ -1,6 +1,7 @@
 import random
 from game.game import (
     TwentyFortyEight,
+    GAME_ID,
 )
 from game.mechanics import (
     DOWN, RIGHT,
@@ -16,6 +17,11 @@ def test_new():
         'gameover': False,
     }
     assert state == expected_state
+
+
+def test_game_has_id():
+    game_id = TwentyFortyEight.id
+    assert game_id == GAME_ID
 
 
 def test_state():
