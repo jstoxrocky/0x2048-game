@@ -9,8 +9,15 @@ from game import (
 )
 
 
+GAME_ID = '0xf709f7dcc2067e34dd3c2fdb82a42f4429cb0ea61e62a21bc6d0ce860d11032d'  # noqa: E501
+
+
 class TwentyFortyEight:
+
+    id = GAME_ID
+
     def __init__(self, rows=4, cols=4):
+        self.id = GAME_ID
         self.rows = rows
         self.cols = cols
         self.gameover = False
